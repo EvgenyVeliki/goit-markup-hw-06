@@ -609,6 +609,25 @@
             </li>
           </ul>
         </div>
+        <div class="fotter-subscription">
+          <form class="fotter-subscription-group">
+            <label class="fotter-subscription-lable">
+              <strong class="fotter-subscription-txt">подпешитесь на рассылку</strong>
+              <input
+                class="fotter-subscription-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+          </form>
+          <button class="fotter-register-form-btn" type="button">
+            Отправить
+            <svg width="24" height="24">
+              <use href="./img/symbol-defs.svg#icon-iconbtn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
     <!-- Modal window -->
@@ -619,8 +638,64 @@
             <use href="./img/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+
+        <form class="form">
+          <strong class="form-title">Оставьте свои данные,мы вам перезвоним</strong>
+          <div class="register-form-group" role="group">
+            <label class="form-group">
+              <span class="form-lable">Имя</span>
+              <input class="form-input" type="text" name="user-name" />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./img/symbol-defs.svg#icon-personblack"></use>
+              </svg>
+            </label>
+            <label class="form-group">
+              <span class="form-lable">Телефон</span>
+              <input class="form-input" type="tell" name="user-phone" />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./img/symbol-defs.svg#icon-phoneblack"></use>
+              </svg>
+            </label>
+            <label class="form-group">
+              <span class="form-lable">Почта</span>
+              <input class="form-input" type="email" name="user-email" />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./img/symbol-defs.svg#icon-mail"></use>
+              </svg>
+            </label>
+            <label class="form-group">
+              <span class="form-lable">Коментарий</span>
+              <textarea
+                class="form-input-messenger"
+                name="user-phone"
+                placeholder="Введите текст"
+              ></textarea>
+              <svg class="form-icon" width="18" height="18">
+                <use href=""></use>
+              </svg>
+            </label>
+          </div>
+
+          <label class="register-form-agreement">
+            <input class="register-checkbox visually-hidden" type="checkbox" name="agreement" />
+            <svg class="register-form-icon" width="16" height="15">
+              <use
+                class="register-form-icon-vector0"
+                href="./img/symbol-defs.svg#icon-check3"
+              ></use>
+              <use class="register-form-icon-vector7" href="./img/symbol-defs.svg#icon-check"></use>
+            </svg>
+            <span class="register-form-agreement-text"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="register-form-agreement-link" href="">Условия договора</a>
+            </span>
+          </label>
+
+          <button class="register-form-btn" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
