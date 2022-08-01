@@ -617,13 +617,12 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--dark-bg-cl);
+  color: var(--header-bg-cl);
   padding: 15px 0 15px 15px;
 }
 
-.fotter-subscription {
+.fotter-subscription-group {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
 }
 
 /* ================================Socials icons */
@@ -721,7 +720,7 @@ img {
 }
 
 .footer-icons {
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 /* +============================================Modal window */
@@ -741,13 +740,14 @@ img {
 }
 
 .modal-window {
-  padding: 40px 40px 39px 41px;
-  transform: translate(-50%, -50%);
+  padding: 40px;
   left: 50%;
   top: 50%;
-  position: relative;
+  position: absolute;
+  transform: translate(-50%, -50%);
   width: 528px;
-  min-height: 581px;
+  height: 581px;
+  position: absolute;
   background-color: var(--header-bg-cl);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -783,28 +783,36 @@ img {
   cursor: pointer;
 }
 
+.modal-btn-icon {
+  fill: currentColor;
+}
+
+.modal-btn-icon:focus,
+.modal-btn-icon:hover {
+  fill: var(--button-bg-cl);
+}
+
 .form {
   text-align: center;
 }
 
 .form-title {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 
   font-weight: 700;
   font-size: 20px;
   line-height: calc(23 / 20);
-  text-align: center;
 }
 
 .register-form-group {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .form-group {
   display: block;
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 }
 
 .form-group:last-child {
@@ -901,13 +909,14 @@ img {
   align-items: center;
   padding: 10px 52px;
   cursor: pointer;
-  background: #188ce8;
+  background-color: var(--button-main-bg-cl);
   border-radius: 4px;
   color: var(--header-bg-cl);
   border: none;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
   transition: box-shadow var(--anim-fast);
 }
 

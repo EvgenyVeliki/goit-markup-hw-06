@@ -610,9 +610,9 @@
           </ul>
         </div>
         <div class="fotter-subscription">
+          <p class="fotter-subscription-txt">подпишитесь на рассылку</p>
           <form class="fotter-subscription-group">
             <label class="fotter-subscription-lable">
-              <strong class="fotter-subscription-txt">подпешитесь на рассылку</strong>
               <input
                 class="fotter-subscription-input"
                 type="email"
@@ -620,13 +620,14 @@
                 placeholder="E-mail"
               />
             </label>
+
+            <button class="fotter-register-form-btn" type="button">
+              Отправить
+              <svg width="24" height="24">
+                <use href="./img/symbol-defs.svg#icon-iconbtn"></use>
+              </svg>
+            </button>
           </form>
-          <button class="fotter-register-form-btn" type="button">
-            Отправить
-            <svg width="24" height="24">
-              <use href="./img/symbol-defs.svg#icon-iconbtn"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </footer>
@@ -644,21 +645,21 @@
           <div class="register-form-group" role="group">
             <label class="form-group">
               <span class="form-lable">Имя</span>
-              <input class="form-input" type="text" name="user-name" />
+              <input class="form-input" type="text" name="user-name" required />
               <svg class="form-icon" width="18" height="18">
                 <use href="./img/symbol-defs.svg#icon-personblack"></use>
               </svg>
             </label>
             <label class="form-group">
               <span class="form-lable">Телефон</span>
-              <input class="form-input" type="tell" name="user-phone" />
+              <input class="form-input" type="tell" name="user-phone" required />
               <svg class="form-icon" width="18" height="18">
                 <use href="./img/symbol-defs.svg#icon-phoneblack"></use>
               </svg>
             </label>
             <label class="form-group">
               <span class="form-lable">Почта</span>
-              <input class="form-input" type="email" name="user-email" />
+              <input class="form-input" type="email" name="user-email" required />
               <svg class="form-icon" width="18" height="18">
                 <use href="./img/symbol-defs.svg#icon-mail"></use>
               </svg>
@@ -677,7 +678,12 @@
           </div>
 
           <label class="register-form-agreement">
-            <input class="register-checkbox visually-hidden" type="checkbox" name="agreement" />
+            <input
+              class="register-checkbox visually-hidden"
+              type="checkbox"
+              name="agreement"
+              required
+            />
             <svg class="register-form-icon" width="16" height="15">
               <use
                 class="register-form-icon-vector0"
